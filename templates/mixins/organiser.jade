@@ -4,5 +4,5 @@ mixin organiser(org)
 			.img-wrapper
 				img(src=org.image, alt='SydJS organiser - ' + org.name, width=40, height=40).img-circle
 			h4.organiser__name=org.name
-			p.organiser__twitter: a(href='https://twitter.com/' + org.twitter, target='_blank') @#{org.twitter}
+			p.organiser__weibo: a(href='http://weibo.com/' + org.weibo, target='_blank') @#{org.weibo}
 		p.mv-0=org.title
