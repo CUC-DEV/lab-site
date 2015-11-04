@@ -12,11 +12,11 @@ exports.initLocals = function(req, res, next) {
 	var locals = res.locals;
 	
 	locals.navLinks = [
-		{ label: 'Home',		key: 'home',		href: '/' },
-		{ label: 'About',		key: 'about',		href: '/about' },
-		{ label: 'Meetups',		key: 'meetups',		href: '/meetups' },
-		{ label: 'Members',		key: 'members',		href: '/members' },
-		{ label: 'Blog',		key: 'blog',		href: '/blog' },
+		{ label: "主页",		key: 'home',		href: '/' },
+		{ label: '关于',		key: 'about',		href: '/about' },
+		{ label: '项目例会',		key: 'meetups',		href: '/meetups' },
+		{ label: '成员组',		key: 'members',		href: '/members' },
+		{ label: '博客',		key: 'blog',		href: '/blog' },
 		{ label: 'Showbag',		key: 'showbag',		href: '/showbag' }
 	];
 	
