@@ -2,31 +2,31 @@
 footer.site-footer.site-footer--sticky: .container
 	.row
 		.col-sm-4
-			h5.footer-heading About
+			h5.footer-heading 关于我们
 			p 一个创造奇迹和美好的实验室.每个周日我们都会讨论关于在线媒体编辑系统的相关事宜.
 			ul.list-inline
-				li: a(href='/about') More about SydJS
-				li: a(href='mengyu.dev@outlook.com') Contact us
+				li: a(href='/about') 更多
+				li: a(href='mengyu.dev@outlook.com') 联系我们
 
 		.col-sm-8
 			.row
 				.col-xs-4
-					h5.footer-heading Members
+					h5.footer-heading 成员
 					ul
-						li: a(href='/members') Members
-						li: a(href='/mentoring') Mentoring
-						li: a(href='/members/mentors') Mentors
+						li: a(href='/members') 成员
+						li: a(href='/mentoring') 答疑
+						li: a(href='/members/mentors') 导师
 						if !user
-							li: a(href='/join').js-auth-trigger Become a Member
+							li: a(href='/join').js-auth-trigger 加入我们
 				.col-xs-4
-					h5.footer-heading Resources
+					h5.footer-heading 资源
 					ul
-						li: a(href='/organisations') Organisations
-						li: a(href='/links') Links
-						li: a(href='/blog') Blog
+						li: a(href='/organisations') 组织
+						li: a(href='/links') 链接
+						li: a(href='/blog') 博客
 						li: a(href='/showbag') Showbag
 				.col-xs-4
-					h5.footer-heading Sponsors
+					h5.footer-heading 赞助商
 					ul: each sponsor in sponsors
 						li: a(href='/organisations#' + sponsor.id)= sponsor.name
 	.row.footer-copyright
